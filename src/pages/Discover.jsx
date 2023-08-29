@@ -4,7 +4,7 @@ import {useGetTopChartsQuery} from "../redux/services/shazamCore"
 
 
 export default function Discover () {
-    const {data, isFetching, error} = useGetTopChartsQuery();
+    const {data} = useGetTopChartsQuery();
     console.log(data);
 
     return (

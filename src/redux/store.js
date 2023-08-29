@@ -1,3 +1,11 @@
+
+/*
+import { configureStore } from '@reduxjs/toolkit';
+import { playerSlice } from './features/playerSlice';
+
+export default configureStore({reducer:playerSlice})
+*/
+
 import { configureStore } from '@reduxjs/toolkit';
 
 import { shazamCoreApi } from './services/shazamCore';
