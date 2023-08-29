@@ -1,5 +1,16 @@
-export default function SongCard () {
+import PlayPause from "./PlayPause"
+
+
+export default function SongCard ({song, i}) {
+  const activeSong = "Test"
   return (
-    <div>Song Cardd</div>
+    <div className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-pulse rounded-lg cursor-pointer">
+      <div className="relative w-full h-56 group">
+        <div className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${activeSong?.title === song.title ? "flex bg-black bg-opacity-70" :"hidden"}`}>
+          <PlayPause />
+        </div>
+        <img  alt="song-img" src={""}/>
+      </div>
+    </div>
   )
 }
