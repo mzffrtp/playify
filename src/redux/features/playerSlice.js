@@ -1,38 +1,4 @@
-/*
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { options } from "../services/shazamCore"
 
-export const getCharts = createAsyncThunk(
-    "/charts/get-top-songs-in-world",
-    async () => {
-        const res = await axios.request(options);
-        console.log(res);
-        return res
-    }
-)
-
-const initialState = {
-    currentSongs: [],
-    currentIndex: 0,
-    isActive: false,
-    isPlaying: false,
-    activeSong: {},
-    genreListId: '',
-    charts: []
-};
-
-export const playerSlice = createSlice({
-    name: 'player',
-    initialState,
-    reducers: {
-        getCharts: (state, action) => {
-            state.charts = action.payload
-        },
-    },
-});
-
-*/
 
 import { createSlice } from '@reduxjs/toolkit';
 
